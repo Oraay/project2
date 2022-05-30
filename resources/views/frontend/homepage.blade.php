@@ -59,9 +59,9 @@
                     {{-- <li>
                         <a href="#"><i class="fa fa-heart"></i></a>
                     </li> --}}
-                  <li>
+                  {{-- <li>
                     <a href="/cart"><i class="fa fa-shopping-cart"></i></a>
-                  </li>
+                  </li> --}}
                 </ul>
               </div>
               <div class="featured__item__text">

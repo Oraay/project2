@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-@section('title','About')
+@section('title','Ula Petshop | About')
 @section('content')
 
 

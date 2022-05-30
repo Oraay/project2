@@ -48,13 +48,6 @@
                   <h6><span>{{ $products->total() }}</span>Produk ditemukan</h6>
                   </div>
               </div>
-
-              <div class="col-lg-4 col-md-3">
-                  <div class="filter__option">
-                  <span class="icon_grid-2x2"></span>
-                  </div>
-              </div>
-
             </div>
             </div>
             <div class="row">
@@ -69,9 +62,9 @@
                                 {{-- <li>
                                 <a href="#"><i class="fa fa-heart"></i></a>
                                 </li> --}}
-                                <li>
+                                {{-- <li>
                                 <a href="/cart"><i class="fa fa-shopping-cart"></i></a>
-                                </li>
+                                </li> --}}
                             </ul>
                             </div>
                             <div class="product__item__text">
