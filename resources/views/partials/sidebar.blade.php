@@ -42,7 +42,7 @@
            {{-- ubah supaya gapake dropdown --}}
             </li>
                <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="/order" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Kelola Pesanan</span>

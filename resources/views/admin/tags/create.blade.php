@@ -7,11 +7,11 @@
                     <a href="{{ route('admin.tags.index') }}" class="btn btn-primary float-right">
                         Kembali
                     </a>
-                </h3>     
+                </h3>
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.tags.store') }}" method="post">
-                    @csrf 
+                    @csrf
                     <div class="form-group">
                         <label for="name">Nama</label>
                         <input type="text" name="name" class="form-control">

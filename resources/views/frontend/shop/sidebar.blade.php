@@ -16,7 +16,7 @@
         @endforeach
     </ul>
     </div>
-    <div class="sidebar__item">
+    {{-- <div class="sidebar__item">
     <h4>Tag</h4>
     @foreach($menu_tags as $menu_tag)
     <div class="sidebar__item__size">
@@ -25,5 +25,5 @@
         </label>
     </div>
     @endforeach
-    </div>
+    </div> --}}
 </div>

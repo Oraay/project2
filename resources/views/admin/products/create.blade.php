@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+@section('title','Form Produk')
 @section('content')
         <div class="card">
             <div class="card-header">
@@ -7,18 +7,18 @@
                     <a href="{{ route('admin.products.index') }}" class="btn btn-primary float-right">
                         Kembali
                     </a>
-                </h3>     
+                </h3>
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.products.store') }}" method="post" enctype="multipart/form-data">
-                    @csrf 
+                    @csrf
                     <div class="form-group">
                         <label for="category_id">Kategori</label>
                         <select class="form-control" name="category_id" id="">
                             @foreach($categories as $id => $categoryName)
                                 <option value="{{ $id }}">{{ $categoryName }}</option>
                             @endforeach
-                        </select>   
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="tags">Tag</label>
@@ -26,7 +26,7 @@
                             @foreach($tags as $id => $tagName)
                                 <option value="{{ $id }}">{{ $tagName }}</option>
                             @endforeach
-                        </select>   
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="name">Nama</label>
@@ -75,7 +75,7 @@
 <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 @endpush
 
-@push('script-alt')   
+@push('script-alt')
 <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
     <script>
    var uploadedGalleryMap = {}

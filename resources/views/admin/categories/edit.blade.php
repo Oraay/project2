@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+@section('title','Edit Kategori')
 @section('content')
         <div class="card">
             <div class="card-header">
@@ -7,11 +7,11 @@
                     <a href="{{ route('admin.categories.index') }}" class="btn btn-primary float-right">
                         Kembali
                     </a>
-                </h3>     
+                </h3>
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.categories.update', $category->id) }}" method="post" enctype="multipart/form-data">
-                    @csrf 
+                    @csrf
                     @method('put')
                     <div class="form-group">
                         <label for="name">Nama</label>
@@ -48,7 +48,7 @@
 <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 @endpush
 
-@push('script-alt')   
+@push('script-alt')
 <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
     <script>
     Dropzone.options.photoDropzone = {

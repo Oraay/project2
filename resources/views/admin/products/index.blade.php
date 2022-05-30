@@ -1,12 +1,12 @@
 @extends('layouts.admin')
-
+@section('title','Data Produk')
 @section('content')
         <div class="card">
             <div class="card-header">
                 <h3>Daftar Produk
                     <a href="{{ route('admin.products.create') }}" class="btn btn-primary float-right">
                         Tambah
-                    </a> 
+                    </a>
                 </h3>
             </div>
             <div class="card-body">

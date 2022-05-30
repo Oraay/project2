@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+@section('title','Edit Produk')
 @section('content')
         <div class="card">
             <div class="card-header">
@@ -7,11 +7,11 @@
                     <a href="{{ route('admin.products.index') }}" class="btn btn-primary float-right">
                         Go Back
                     </a>
-                </h3>     
+                </h3>
             </div>
             <div class="card-body">
                 <form action="{{ route('admin.products.update', $product->id) }}" method="post">
-                    @csrf 
+                    @csrf
                     @method('put')
                     <div class="form-group">
                     <label for="category_id">Category</label>
@@ -19,7 +19,7 @@
                         @foreach($categories as $id => $categoryName)
                             <option {{ $id === $product->category->id ? 'selected' : null }} value="{{ $id }}">{{ $categoryName }}</option>
                         @endforeach
-                    </select>   
+                    </select>
                     </div>
                     <div class="form-group">
                         <label for="tags">Tag</label>
@@ -27,7 +27,7 @@
                             @foreach($tags as $id => $tagName)
                                 <option {{ in_array($id, $product->tags->pluck('id')->toArray()) ? 'selected' : null  }} value="{{ $id }}">{{ $tagName }}</option>
                             @endforeach
-                        </select>   
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -76,7 +76,7 @@
 <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 @endpush
 
-@push('script-alt')   
+@push('script-alt')
 <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
     <script>
    var uploadedGalleryMap = {}
@@ -108,7 +108,7 @@ Dropzone.options.galleryDropzone = {
       var files =
         {!! json_encode($product->gallery) !!}
           for (var i in files) {
-              
+
           var file = files[i]
           this.options.addedfile.call(this, file)
           this.options.thumbnail.call(this, file, file.original_url)

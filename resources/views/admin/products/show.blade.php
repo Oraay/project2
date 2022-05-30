@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+@section('title','Lihat Produk')
 @section('content')
         <div class="card">
             <div class="card-header">
@@ -7,7 +7,7 @@
                     <a href="{{ route('admin.products.index') }}" class="btn btn-primary float-right">
                         Kembali
                     </a>
-                </h3>     
+                </h3>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
